@@ -25,6 +25,10 @@ export const Register = () => {
         console.log(data)
     };
 
+    const login = () => {
+        history.push('/register')
+    };
+
     return (
         <div className="container mt-5">
             <h3>Register</h3>
@@ -67,6 +71,10 @@ export const Register = () => {
         <br />
         <button type="button" onClick={onSubmit} className="btn btn-primary">
             Register
+        </button>
+        <br/>
+        <button type="button" onClick={onSubmit} className="btn btn-primary">
+            Sign In
         </button>
         </div>
     )

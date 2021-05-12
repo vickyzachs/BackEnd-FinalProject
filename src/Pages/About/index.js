@@ -7,7 +7,7 @@ import NavBar from '../../Component/NavBar';
 const About = () => {
     return (
         //JSX
-        <div>
+        <div className="container">
             <NavBar />
             <h3>About</h3>
         </div>

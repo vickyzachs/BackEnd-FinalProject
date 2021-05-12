@@ -6,6 +6,7 @@ const Login = () => {
 
     const [email, setEmail] = useState ("");
     const [password, setPassword] = useState ("");
+    
 
     let history = useHistory();
 
@@ -18,6 +19,9 @@ const Login = () => {
         history.push('/')
     };  
 
+    const register = () => {
+        history.push('/register')
+    };
     return (
         //JSX
         <div className="container mt-5">
@@ -38,6 +42,8 @@ const Login = () => {
             <br/>
             <br/>
             <button type="button" class="btn btn-primary" onClick={handleSubmit}>Sign In</button>
+            <br/>
+            <button type="button" class="btn btn-primary" onClick={register}>Registration</button>
         </div> 
     )
 }

@@ -5,6 +5,7 @@ import  {
     Route
 } from "react-router-dom";
 import About from '../../Pages/About';
+import AddUsers from '../../Pages/AddUsers';
 import Dashboard from '../../Pages/Dashboard';
 import Login from '../../Pages/Login';
 import Register from '../../Pages/Register';
@@ -24,6 +25,9 @@ const Routes = () => {
             </Route>
             <Route path="/about">
                 <About />
+            </Route>
+            <Route path="/adduser">
+                <AddUsers />
             </Route>
             <Route path="/register">
                 <Register />
